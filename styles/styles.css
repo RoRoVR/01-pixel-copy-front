@@ -11,6 +11,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: white;
 }
 
 .game-container-px{
@@ -70,7 +72,7 @@
 .pixel-btn-2{
     background-image: url('../src/assets/btn2.png');
 }
-.pixel-btn-3{
+.pixel-btn-2.equals{
     background-image: url('../src/assets/btn3.png');
 }
 
