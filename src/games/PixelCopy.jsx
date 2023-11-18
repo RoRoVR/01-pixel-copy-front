@@ -94,7 +94,7 @@ export const PixelCopy = ({setPlayerScore}) => {
 
   return (
     <div className='game-container-px' >
-      <div style={{display:'inline-block' }} >
+      <div style={{display:'inline-block', marginRight: '15%' }} >
         {pixels.map((row,r)=>(
           <div key={r}>
             {
@@ -106,7 +106,7 @@ export const PixelCopy = ({setPlayerScore}) => {
         ))}
       </div>
 
-      <button className="btn-next" onClick={savePixelArt}></button>
+      {/* <button className="btn-next" onClick={savePixelArt}></button> */}
 
 
       <div style={{display:'inline-block' }} >

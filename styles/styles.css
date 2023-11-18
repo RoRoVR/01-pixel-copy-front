@@ -1,18 +1,50 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: #01152A;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
+}
+.container-time{
+    margin: 50px;
+    width: 85%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.61);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.time{
+    background-color: green;
+    height: 30px;
+}
+.time.start{
+    animation: time 60s linear normal;
+}
+
+.container-block{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .game-container-px{
@@ -76,6 +108,24 @@
     background-image: url('../src/assets/btn3.png');
 }
 
+.btn-play{
+    width: 128px;
+    height: 128px;
+    background-color: transparent;
+    background-image: url('../src/assets/play.png');
+    background-size: cover;
+    image-rendering: pixelated;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+
+.btn-play:hover{
+    opacity: 1;
+}
+
+
 .btn-next{
     border: none;
     width: 128px;
@@ -108,4 +158,14 @@
     to{
         background-position: 0;
     }
+}
+
+@keyframes time {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+    
 }
